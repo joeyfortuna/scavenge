@@ -1,3 +1,8 @@
+/* 
+  This code is taken from https://codesandbox.io/s/qr-code-scanner-ilrm9?file=/src/qrCodeScanner.js
+  by Dmitri Lau (https://www.sitepoint.com/author/dlau) and Paul Orac (https://www.sitepoint.com/author/porac)
+*/
+
 const myqrcode = window.qrcode;
 
 const video = document.createElement("video");
