@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Scavenge!</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="qr_packed.js"></script>
+    <style>
+    </style>
+  </head>
+
+  <body>
+    <div id="container">
+      <h1>Scavenge!</h1>
+      <div class="circle" id="btn-scan-qr">
+        SCAN
+      </div>
+
+      <canvas hidden="" id="qr-canvas"></canvas>
+
+      <div id="qr-result" hidden="">
+       <span id="outputData">okay!</span>
+      </div>
+    </div>
+    <audio id="jinglePlayer">
+      <source src="jingle.ogg" type="audio/ogg">
+      <source src="jingle.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio>
+    <script src="qrCodeScanner.js"></script>
+    <script>
+
+    </script>
+  </body>
+</html>

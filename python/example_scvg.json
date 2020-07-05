@@ -1,0 +1,47 @@
+[
+ {
+    "master_file":"player.png"
+ },
+ {
+    "file_name":"player1.png",
+    "clue_location":"1. Player - Start",
+    "msg":"Climb to the mattresses and you'll begin. Seek beneath the changing wind."
+ },
+ {
+    "file_name":"player2.png",
+    "clue_location":"2. Player - Updstairs Fan",
+    "msg":"If you'd like to have some, it's easy to please. Think of this stuff as just juvenile cheese."
+ },
+ {
+    "file_name":"player3.png",
+    "clue_location":"3. Player - Milk",
+    "msg":"In a house, during school, where we sat as a pair, is a clue within view of your fuzzy soft chair."
+ },
+ {
+    "file_name":"player4.png",
+    "clue_location":"4. Player - Dresser in Little House",
+    "msg":"Winding pathways, dead-end trips. A book of labyrinthes filled with this."
+ },
+ {
+    "file_name":"player5.png",
+    "clue_location":"5. Player - Maze Book in Car",
+    "msg":"A woodland spirit, giant, sweet. This clue is where you'd find his feet."
+ },
+ {
+    "file_name":"player6.png",
+    "clue_location":"6. Player - Totorro's Feet",
+    "msg":"The second clue: 'First of October.' Now, go look in the mailbox."
+ },
+ {
+    "file_name":"player7.png",
+    "clue_location":"7. Player - Mailbox",
+    "msg":"There's only eight, so just you wait. The last clue's under a fancy plate."
+
+ },
+ {
+    "file_name":"player8.png",
+    "clue_location":"8. Player - China Plate",
+    "msg":"You did it, you made it. You're here at the end. When Lillian's finished, the solving begins!"
+    
+ }
+]
