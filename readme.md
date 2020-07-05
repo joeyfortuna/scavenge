@@ -3,7 +3,7 @@
 
 All the web code can just be accessed here: https://s3.amazonaws.com/natterbot.com/qrcode/index.html
 
-To create the codes, build a JSON file as an array, with one object per QRCode.
+To create the codes, build a JSON file as an array, with one object per QRCode. An example file can be found in the python directory of this repo: "example_scvg.json"
 
 Properties of the objects should be: 
 
