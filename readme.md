@@ -15,4 +15,6 @@ One high-level object should also be in the array:
 
 * master_file - this is the name of the image with all of the clues packed together
 
-To create the printable page full of clues, run "process_clues.py" in the same directory as your json file (note that the file name should end with "_scvg.json"). 
+To create the printable page full of clues, run "process_clues.py" in the same directory as your json file (note that the file name should end with "_scvg.json").
+
+I've tried to include credit for all of the stuff I cargo-culted, but let me know if I missed anything or anyone!
