@@ -13,12 +13,20 @@ const qrResult = document.getElementById("qr-result");
 const outputData = document.getElementById("outputData");
 const btnScanQR = document.getElementById("btn-scan-qr");
 
+const dbg = document.getElementById("dbg");
 let scanning = false;
 let initialized = false;
 
 myqrcode.callback = res => {
   if (res) {
-    outputData.innerText = res;
+    if (res.indexOf("<img")>-1) {
+      outputData.innerHTML=res;
+    }
+    else {
+      outputData.innerText = res;
+    }
+    dbg.value=res;
+
     scanning = false;
     document.getElementById('jinglePlayer').play();
 

@@ -26,15 +26,25 @@ def makeClues(cluedir):
                 for barcode in data:
                     temp_image = "%s/%s%d.png" % (cluedir,master_file,indx) #barcode["file_name"]
                     print("\t%s" % temp_image)
-                    msg = barcode["msg"]
-                    caption = "%d. %s - %s" % (indx,master_file,barcode["clue_location"])
+                    try:
+                        msg = barcode["msg"]
+                        caption = "%d. %s - %s" % (indx,master_file,barcode["clue_location"])
+                    except:
+                        if "img" in barcode:
+                            msg = '<img src="%s"/><br>%s' % (barcode["img"]["src"],barcode["img"]["msg"])
+                            caption = barcode["img"]["caption"]
+                            
+                    try:
+                        colr = barcode["color"]
+                    except:
+                        colr = "#000"
                     qrcode = pyqrcode.create(msg)
-                    qrcode.png(temp_image,scale=3)
+                    qrcode.png(temp_image,scale=3,quiet_zone=6,module_color=colr)
                     img=Image.open(temp_image)
                     h = img.height
                     draw=ImageDraw.Draw(img)
-                    font = ImageFont.truetype("Arial.ttf", 14)
-                    draw.text((10,(h-14)),str(caption),font=font)
+                    font = ImageFont.truetype("Arial.ttf", 12)
+                    draw.text((10,(h-16)),str(caption),font=font)
                     barcode["image"] = img
                     images.append(barcode)
                     img.save(temp_image)

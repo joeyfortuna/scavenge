@@ -1,0 +1,10 @@
+[
+ {
+    "clue_location":"Start",
+    "img": { 
+      "caption":"some image caption",
+      "src": "https://s3.amazonaws.com/natterbot.com/qrcode/lil10/air_filter.png",
+      "msg": "Now what will you do?"
+    }
+  }
+]
